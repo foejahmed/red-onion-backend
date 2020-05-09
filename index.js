@@ -34,7 +34,7 @@ app.get("/fooditems", (req,res)=>{
                 res.send(documents)
             }
         })
-        client.close();
+        // client.close();
     })
 })
 
@@ -73,7 +73,7 @@ app.get('/fooditems/:key', (req,res)=>{
                 res.send(documents[0])
             }
         })
-        client.close();
+        // client.close();
     })
 })
 
@@ -96,7 +96,7 @@ app.post("/getFoodsByKey", (req,res)=>{
                 res.send(documents)
             }
         })
-        client.close();
+        // client.close();
     })
 })
 
