@@ -14,7 +14,7 @@ let client = new MongoClient(uri, { useNewUrlParser: true });
 
 // Get
 app.get('/', (req, res) => {
-    res.send('<a href="/products">Products</a>');
+    res.send('<a href="/fooditems">Fooditems</a>');
 });
 app.get('/fooditems', (req, res) => {
     client = new MongoClient(uri, { useNewUrlParser: true });
@@ -107,6 +107,5 @@ app.post('/placeOrder', (req, res) => {
     });
 });
 
-const port = process.env.PORT || 4200;
-app.listen(port, () => console.log(`Listening to port`));
-
+const port = process.env.PORT || 8080;
+app.listen(port, () => console.log(`Listening to port ${port}`));
